@@ -41,8 +41,8 @@
                         <li class="nav-item"><a href="index.html" class="nav-link">Contact</a></li>
 
                         <li class="nav-item dropdowns">
-                            <a href="#" class="nav-link dropbtn" onclick="dropbtn()">FAQ</a>
-                            <div id="mydropdown" class="dropdown-contents">
+                            <a href="#" class="nav-link dropbtn" onclick="dropbtn(event)">FAQ</a>
+                            <div class="dropdown-contents mydropdowns">
                                 <input type="text" name="search" onkeypress="dropfilter()" id="search" class="search" autocomplete="off" placeholder="Search..." />
                                 <a href="javascript:void(0)">Room Booking</a>
                                 <a href="javascript:void(0)">Transportation</a>
@@ -203,7 +203,13 @@
                         <h4>Airport Transportation</h4>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
 
-                        <button type="button" class="btn btn-primary rounded-0">More</button>
+                        <button type="button" class="btn btn-outline-dark rounded-0" onclick="dropbtn(event)">More Info</button>
+
+                        <div class="dropdown-contents">
+                            <a href="javascript:void(0);">Hotal Limousines</a>
+                            <a href="javascript:void(0);">Driver</a>
+                            <a href="javascript:void(0);">Vistt City</a>
+                        </div>
                     </div>
                 </div>
 
@@ -213,23 +219,58 @@
                         <h4>Quick Check IN/Out</h4>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
 
-                        <button type="button" class="btn btn-primary rounded-0">More</button>
+                        <button type="button" class="btn btn-outline-dark rounded-0" onclick="dropbtn(event)">More Info</button>
+
+                        <div class="dropdown-contents">
+                            <a href="javascript:void(0);">Early checkin</a>
+                            <a href="javascript:void(0);">Lately Checkout</a>
+                            <a href="javascript:void(0);">Extra Half Day</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="iconboxes">
+                    <div class="iconboxes dropdowns">
                         <div class="icons"><i class="fas fa-building fa-2x"></i></div>
                         <h4>24/7 Room Service</h4>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
 
-                        <button type="button" class="btn btn-primary rounded-0">More</button>
+                        <button type="button" class="btn btn-outline-dark rounded-0" onclick="dropbtn(event)">More Info</button>
+
+                        <div class="dropdown-contents">
+                            <a href="javascript:void(0);">Cleaning Service</a>
+                            <a href="javascript:void(0);">Food Order</a>
+                            <a href="javascript:void(0);">Outdoor Call</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- End Our Service Section -->
+
+    <!-- Start Testimonials  Section-->
+    <section id="testimonials" class="bg-dark text-white p-4 mt-3">
+        <div class="container">
+            <div class="row text-center">
+
+                <div class="testimonial-container">
+                    <div class="fas fa-quote-right fa-quote"></div>
+                    <div class="fas fa-quote-left fa-quote"></div>
+
+                    <div class="company">
+                        <h4 class="companyname">Rich Star Restaurant</h4>
+                        <p class="role">Our Outlet</p>
+                    </div>
+
+                    <p class="testimonial">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonials Section-->
 
 
     <!-- bootstrap css1 js1 -->

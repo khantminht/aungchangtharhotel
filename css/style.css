@@ -63,9 +63,18 @@ header{
 
 .dropdown-contents{
     width: 230px;
-    background-color: #f4f4f4;
+    background: linear-gradient(
+        30deg,
+        violet,
+        white,
+        violet
+    );
+    border-radius: 12px;
     position: absolute;
+    left: 50%;
     z-index: 3;
+
+    transform: translateX(-50%);
 
     display: none;
 }
@@ -257,3 +266,36 @@ header{
     border: 2px solid purple;
 }
 /* End Our Service Section */
+
+/* Start Testimonial Section */
+.testimonial-container{
+    position: relative;
+}
+
+.fa-quote{
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 28px;
+    position: absolute;
+    top: 4px;
+}
+
+.fa-quote-right {left: 0;}
+.fa-quote-left {right: 0;}
+
+.testimonial{
+    line-height: 30px;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 4px;
+    background-color: tomato;
+
+    /* transform-origin: left; */
+    animation: myincrement 10s linear infinite;
+}
+
+@keyframes myincrement{
+    0%  { transform: scaleX(0);}
+}
+/* End Testimonial Section */
