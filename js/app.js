@@ -75,7 +75,6 @@ function dropfilter(){
 
     setInterval(autoload, 3000);
 // End auto Background
-
 // End Header
 
 // Start Testimonial Sectoin
@@ -111,6 +110,20 @@ const testimonialdatas = [
     }
 ];
 
-let idx = 0;
+let idm = 0;
+
+function updatetestimonial(){
+    getcompanyname.textContent = testimonialdatas[idm].name;
+    getrole.textContent = testimonialdatas[idm].position;
+    gettestimonial.textContent = testimonialdatas[idm].text;
+
+    idm++;
+
+    if(idm > testimonialdatas.length - 1){
+        idm = 0;
+    }
+}
+updatetestimonial();
+setInterval(updatetestimonial,10000);
 // 3TM
 // End Testimonial Section
